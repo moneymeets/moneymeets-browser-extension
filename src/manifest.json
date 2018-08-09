@@ -31,8 +31,9 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.moneymeets.net/*",
-        "*://my.moneymeets.com/*"
+        "https://*.moneymeets.net/*",
+        "https://my.moneymeets.com/*",
+        "https://*.moneymeets.services/*"
       ],
       "js": ["content.js"]
     }
