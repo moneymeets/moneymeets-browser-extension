@@ -2,7 +2,8 @@
 
 const allowedHosts = [
   'dev.moneymeets.net',
-  'my.moneymeets.com'
+  'my.moneymeets.com',
+  'moneymeets.services'
 ];
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
