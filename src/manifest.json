@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "moneymeets inspector",
   "description": "Stops you from wasting time using DevTools to inspect metadata",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "page_action": {
     "default_title": "moneymeets inspector",
     "default_icon": {
