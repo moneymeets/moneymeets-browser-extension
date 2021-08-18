@@ -32,8 +32,8 @@
     {
       "matches": [
         "https://*.moneymeets.net/*",
-        "https://my.moneymeets.com/*",
-        "https://*.moneymeets.services/*"
+        "https://*.beratung.io/*",
+        "https://*.beratung.show/*"
       ],
       "js": ["content.js"]
     }
