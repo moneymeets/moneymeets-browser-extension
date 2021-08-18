@@ -5,10 +5,15 @@ const MetaNameEnum = Object.freeze({
   MM_BRANCH: 'moneymeets:branch'
 });
 
-const metaElementVersionContent = getAttributeValue(document.querySelector(`meta[name="${MetaNameEnum.MM_VERSION}"]`), 'content') || '';
-const metaElementBranchContent =  getAttributeValue(document.querySelector(`meta[name="${MetaNameEnum.MM_BRANCH}"]`), 'content') || '';
+let metaElementVersionContent;
+let metaElementBranchContent;
 
-storeMetadata(metaElementVersionContent, metaElementBranchContent);
+const interval = setInterval(() => {
+  metaElementVersionContent = getAttributeValue(document.querySelector(`meta[name="${MetaNameEnum.MM_VERSION}"]`), 'content') || '';
+  metaElementBranchContent =  getAttributeValue(document.querySelector(`meta[name="${MetaNameEnum.MM_BRANCH}"]`), 'content') || '';
+  storeMetadata(metaElementVersionContent, metaElementBranchContent);
+  clearInterval(interval);
+}, 500);
 
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') {
