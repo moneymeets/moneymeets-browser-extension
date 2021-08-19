@@ -31,9 +31,10 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.moneymeets.net/*",
-        "https://*.beratung.io/*",
-        "https://*.beratung.show/*"
+        "https://*.dev.moneymeets.net/*",
+        "https://*.beratung.dev/*",
+        "https://*.beratung.show/*",
+        "https://*.beratung.io/*"
       ],
       "js": ["content.js"]
     }
