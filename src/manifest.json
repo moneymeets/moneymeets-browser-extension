@@ -31,7 +31,6 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.dev.moneymeets.net/*",
         "https://*.beratung.dev/*",
         "https://*.beratung.show/*",
         "https://*.beratung.io/*"

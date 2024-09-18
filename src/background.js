@@ -1,7 +1,6 @@
 'use strict';
 
 const allowedHosts = [
-  'dev.moneymeets.net',
   'beratung.dev',
   'beratung.show',
   'beratung.io'
